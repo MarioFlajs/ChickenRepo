@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <link rel="stylesheet" href="index.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chicken Wish list</title>
 </head>
 <body>
+    <script src="/backEnd.js"></script>
    <header>
     
        <nav class="navigation">
@@ -19,36 +21,48 @@
    <h1>CHICKEN WISH</h1>
    <h2>Add chickens to your wishlist, we will ensure to find the breed and amount of chickens you are looking for in reasonable time.</h2>
    <br>
-   <div class="sector">
+   <div class="sector" id="OneSector">
         <form id="sectionBsection">
-            <img class="BreedsImg"  src="C:/HTML/codecademy project chickens/ChickenRepo/img/Plymouth Rock.jpg" alt="Plymouth Rock Chicken">
+            <img class="BreedsImg"  src="./img/Plymouth Rock.jpg" alt="Plymouth Rock Chicken">
             <p><strong>Plymouth Rock</strong> is an American breed of domestic chicken. It was first seen in Massachusetts in the nineteenth century, and for much of the early twentieth century was the most popular chicken breed in the United States. It is a dual-purpose breed, raised both for its meat and for its brown eggs. It is resistant to cold, easy to manage.</p>
             
             <br>
-                <form id="submitInput" action="submit">
 
-                <div class="rating">
-                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+              <form id="submitInput" action="submit">
+                  
+
+                <div class="stars" data-rating="0" >
+                    <span class="star">&nbsp;</span>
+                    <span class="star">&nbsp;</span>
+                    <span class="star">&nbsp;</span>
+                    <span class="star">&nbsp;</span>
+                    <span class="star">&nbsp;</span>
                 </div>
 
                 <input aria-checked="true" class="inputNumber" type="number" value="1" min="0" max="99999999" required><p> Number of Chickens</p></input>
                 
                 <button class="ButonText" type="button" role="button">Add To List</button>
-            </form>
+
+                
+              </form>
         </form>
    </div>
     <hr>
     <div class="sector">
         <form id="sectionBsection">
-            <img class="BreedsImg"  src="C:/HTML/codecademy project chickens/ChickenRepo/img/polish-chicken.jpg" alt="Polish Chicken">
+            <img class="BreedsImg"  src="./img/polish-chicken.jpg" alt="Polish Chicken">
             <p><strong>Polish</strong> or Poland is a European breed of crested chickens known for its remarkable crest of feathers. The oldest accounts of these birds come from The Netherlands; their exact origins are unknown, In addition to combs, they are adorned with large crests that nearly cover the entirety of the head. This crest limits their vision, and as a result can affect their temperament. Thus, though normally tame, they may be timid and easily frightened.
                 Polish chickens are bred primarily as a show bird, but were originally productive egg layers. Accordingly, Polish rarely go broody and are noted for their white eggs. There are bearded, non-bearded and frizzle varieties.</p>
             <br>
                 <form id="submitInput" action="submit">
 
-                <div class="rating">
-                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                </div>
+                    <div class="stars" data-rating="0">
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                    </div>
 
                 <input aria-checked="true" class="inputNumber" type="number" value="1" min="0" max="99999999" required><p> Number of Chickens</p></input>
                 
@@ -59,14 +73,18 @@
     <hr>
     <div class="sector">
         <form id="sectionBsection">
-            <img class="BreedsImg"  src="C:/HTML/codecademy project chickens/ChickenRepo/img/hen-brahma.jpg" alt="Brahma Chicken">
+            <img class="BreedsImg"  src="./img/hen-brahma.jpg" alt="Brahma Chicken">
             <p><strong>Brahma</strong> is an American breed of chicken. It was developed in the United States from birds imported from the Chinese port of Shanghai, and was the principal American meat breed from the 1850s until about 1930. It is a good winter layer of large brown eggs and which weigh approximately 55–60 g. Three color varieties are recognised by the American Standard of Perfection: light, dark, and buff. The light Brahma has a base color of white, with black hackles edged in white and a black tail; the saddle-feathers of the cock are striped with black.</p>
             <br>
                 <form id="submitInput" action="submit">
 
-                <div class="rating">
-                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                </div>
+                    <div class="stars" data-rating="0">
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                    </div>
 
                 <input aria-checked="true" class="inputNumber" type="number" value="1" min="0" max="99999999" required><p> Number of Chickens</p></input>
                 
@@ -77,14 +95,18 @@
     <hr>
     <div class="sector">
         <form id="sectionBsection">
-            <img class="BreedsImg"  src="C:/HTML/codecademy project chickens/ChickenRepo/img/Vorwerk-chicken.jpg" alt="Vorwerk Chicken">
+            <img class="BreedsImg"  src="./img/Vorwerk-chicken.jpg" alt="Vorwerk Chicken">
             <p><strong>Vorwerk</strong> is a breed of chicken originating in Germany. Though it is unrelated to the German company which produces the Vorwerk vacuum cleaner, it is the only chicken to share its name with a brand of household appliance. A rare fowl, it has distinctive black-and-gold plumage. Vorwerks are a dual-purpose chicken suitable for both meat and egg production. Standard size males weigh 2.5–3.2 kilos, and females weigh 2–2.5 kilos. However it is very important to note that the European bantam standards are different from the US, which is understandable as they were produced using different breeds.</p>
             <br>
                 <form id="submitInput" action="submit">
 
-                <div class="rating">
-                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                </div>
+                    <div class="stars" data-rating="0">
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                    </div>
 
                 <input aria-checked="true" class="inputNumber" type="number" value="1" min="0" max="99999999" required><p> Number of Chickens</p></input>
                 
@@ -95,14 +117,18 @@
     <hr>
     <div class="sector">
         <form id="sectionBsection">
-            <img class="BreedsImg"  src="C:/HTML/codecademy project chickens/ChickenRepo/img/Hamburg-chicken.jpg" alt="Hamburg Chicken">
+            <img class="BreedsImg"  src="./img/Hamburg-chicken.jpg" alt="Hamburg Chicken">
             <p><strong>Hamburg</strong> Dutch: Hollands hoen, German: Hamburger, is a breed of chicken which is thought to have originated in Holland sometime prior to the fourteenth century. The name may be spelled Hamburgh in the United Kingdom and in Australia. Hamburgs mature quickly and are considered good egg producers. Eggs weigh about 50 g, with glossy, white shells.</p>
             <br>
                 <form id="submitInput" action="submit">
 
-                <div class="rating">
-                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                </div>
+                    <div class="stars" data-rating="0">
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                    </div>
 
                 <input aria-checked="true" class="inputNumber" type="number" value="1" min="0" max="99999999" required><p> Number of Chickens</p></input>
                 
@@ -113,14 +139,18 @@
     <hr>
     <div class="sector">
         <form id="sectionBsection">
-            <img class="BreedsImg"  src="C:/HTML/codecademy project chickens/ChickenRepo/img/Ayam-Cemani.jpg" alt="Ayam Cemani Chicken">
+            <img class="BreedsImg"  src="./img/Ayam-Cemani.jpg" alt="Ayam Cemani Chicken">
             <p><strong>Ayam Cemani</strong> is an uncommon and relatively modern breed of chicken from Indonesia. They have a dominant gene that causes hyperpigmentation (fibromelanosis), making the chicken mostly black, including feathers, beak, and internal organs. Their beaks and tongues, black combs and wattles, and even their meat, bones, and organs appear black. The blood of the Ayam Cemani is normally colored. The birds' black color occurs as a result of excess pigmentation of the tissues, caused by a genetic condition known as fibromelanosis. This gene is also found in some other black fowl breeds. The roosters weigh 2.0–2.5 kg and the hens 1.5–2.0 kg. The hens lay cream-colored eggs, although they are poor setters and rarely hatch their own brood. Eggs weigh an average of 45 g.</p>
             <br>
                 <form id="submitInput" action="submit">
 
-                <div class="rating">
-                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                </div>
+                    <div class="stars" data-rating="0">
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                    </div>
 
                 <input aria-checked="true" class="inputNumber" type="number" value="1" min="0" max="99999999" required><p> Number of Chickens</p></input>
                 
@@ -131,14 +161,18 @@
     <hr>
     <div class="sector">
         <form id="sectionBsection">
-            <img class="BreedsImg"  src="C:/HTML/codecademy project chickens/ChickenRepo/img/fayoumi-chicken.jpg" alt="Fayoumi Chicken">
+            <img class="BreedsImg"  src="./img/fayoumi-chicken.jpg" alt="Fayoumi Chicken">
             <p><strong>Fayoumi</strong> or Egyptian Fayoumi is an Egyptian breed of chicken. It originates from – and is named for – the governorate of Fayoum, which lies south-west of Cairo and west of the Nile. It is believed to be an ancient breed. The Fayoumi is a hardy breed, well suited to hot climates. It forages well, and is suited to free-range management. Hens lay a good number of small white or cream eggs. They are not given to broodiness as pullets, but can be when they reach two or three years of age. The breed is fast to mature, with hens laying by four and half months, and cockerels crowing at five or six weeks.</p>
             <br>
                 <form id="submitInput" action="submit">
 
-                <div class="rating">
-                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                </div>
+                    <div class="stars" data-rating="0">
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                    </div>
 
                 <input aria-checked="true" class="inputNumber" type="number" value="1" min="0" max="99999999" required><p> Number of Chickens</p></input>
                 
@@ -149,14 +183,18 @@
     <hr>
     <div class="sector">
         <form id="sectionBsection">
-            <img class="BreedsImg"  src="C:/HTML/codecademy project chickens/ChickenRepo/img/Phoenix-chicken.jpg" alt="Phoenix Chicken">
+            <img class="BreedsImg"  src="./img/Phoenix-chicken.jpg" alt="Phoenix Chicken">
             <p><strong>Phoenix</strong> The Phoenix is a German breed of long-tailed chicken. It derives from cross-breeding of imported long-tailed Japanese birds similar to the Onagadori with other breeds.</p>
             <br>
                 <form id="submitInput" action="submit">
 
-                <div class="rating">
-                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                </div>
+                    <div class="stars" data-rating="0">
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                    </div>
 
                 <input aria-checked="true" class="inputNumber" type="number" value="1" min="0" max="99999999" required><p> Number of Chickens</p></input>
                 
@@ -167,14 +205,18 @@
     <hr>
     <div class="sector">
         <form id="sectionBsection">
-            <img class="BreedsImg"  src="C:/HTML/codecademy project chickens/ChickenRepo/img/faverolles-chicken.jpg" alt="Faverolles chicken">
+            <img class="BreedsImg"  src="./img/faverolles-chicken.jpg" alt="Faverolles chicken">
             <p><strong>Faverolles</strong>  are classified as a heavy breed and have a beard, muffs, feathered feet and five toes per foot, rather than the usual four. Faverolles are well adapted both to confinement and free range. When battery cages began to be used at the very beginning of the twentieth century, Faverolles tolerated the close confinement better than the Houdan breed. Thus, the Faverolles was the primary breed which produced eggs for the Paris market during the early part of the century. Although primarily kept today as an ornamental and exhibition breed, it remains an excellent layer, as well as a fine meat chicken. The most common color is Salmon. The plumage of salmon females is mainly brown and creamy white. The males are darker, with black, brown, and straw-colored feathers.</p>
             <br>
                 <form id="submitInput" action="submit">
 
-                <div class="rating">
-                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                </div>
+                    <div class="stars" data-rating="0">
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                    </div>
 
                 <input aria-checked="true" class="inputNumber" type="number" value="1" min="0" max="99999999" required><p> Number of Chickens</p></input>
                 
@@ -185,14 +227,18 @@
     <hr>
     <div class="sector">
         <form id="sectionBsection">
-            <img class="BreedsImg"  src="C:/HTML/codecademy project chickens/ChickenRepo/img/silkie-chicken.jpg" alt="Silkie chicken">
+            <img class="BreedsImg"  src="./img/silkie-chicken.jpg" alt="Silkie chicken">
             <p><strong>Silkie</strong>  is a breed of chicken named for its atypically fluffy plumage, which is said to feel like silk and satin. The breed has several other unusual qualities, such as black skin and bones, blue earlobes, and five toes on each foot, whereas most chickens only have four. They are often exhibited in poultry shows, and appear in various colors. In addition to their distinctive physical characteristics, Silkies are well known for their calm, friendly temperament. It is among the most docile of poultry. Hens are also exceptionally broody, and care for young well. Though they are fair layers themselves, laying only about three eggs a week, they are commonly used to hatch eggs from other breeds and bird species due to their broody nature. Silkie chickens are very easy to keep as pets. They are suitable for children, but like any pet, should be handled with care.</p>
             <br>
                 <form id="submitInput" action="submit">
 
-                <div class="rating">
-                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                </div>
+                    <div class="stars" data-rating="0">
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                    </div>
 
                 <input aria-checked="true" class="inputNumber" type="number" value="1" min="0" max="99999999" required><p> Number of Chickens</p></input>
                 
@@ -213,6 +259,6 @@
     <a href="#"><span>Links</span></a>
 
 
-    
+
 </footer>
 </html>

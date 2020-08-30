@@ -24,7 +24,7 @@ header {
     background-size: 100%;
     height: 15rem;
     width: 100%;
-    background-image: url("C:/HTML/codecademy project chickens/ChickenRepo/img/navBar.jpg");
+    background-image: url("./img/navBar.jpg");
 
 }
 
@@ -58,11 +58,11 @@ h1 {
 
 body{
     background-color: rgba(179, 179, 179, 0.74);
-    background-image: url("C:/HTML/codecademy project chickens/ChickenRepo/img/background.jpg");
+    background-image: url("./img/background.jpg");
     background-position: top;
     background-size: 300%;
     background-repeat: repeat;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.473);
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.644);
     
     
     
@@ -98,7 +98,7 @@ h2 {
     margin: 0px 20px 0px 0px; 
     display: block;
     overflow: auto;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.473);
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.658);
     
 
 }
@@ -165,35 +165,47 @@ input {
     display: inline;
     margin-left: 5rem;
     
-    
-    
-    
-
 }
 
-.rating {
-    unicode-bidi: bidi-override;
-    direction: rtl;
-    color: rgba(255, 238, 0, 0.938);
-    font-size: 3rem;
+
+
+.star{
+  align-items: center;
+  margin: .6rem;
+  color:rgba(255, 238, 0, 0.938);
+  font-size: 2rem;
+    /* space out the stars */
+  
+  display: inline;
+}
+.star::before{
+  content: '\2606';    /* star outline */
+  cursor: pointer;
+}
+.star.rated::before{
+  /* the style for a selected star */
+  content: '\2605';  /* filled star */
+}
+
+.stars{
+    max-width: 5rem;
+    margin-inline: 3rem;
+    padding-inline: 2rem;
     display: inline;
-    margin-left: 6rem;
+    counter-reset: rateme 0;   
+    font-size: 2.0rem;
+    font-weight: 1000;
+}
+.star.rated{
+    counter-increment: rateme 1;
     
-    
-    
-    
-    
-  }
-  .rating > span {
-    display: inline-block;
-    position: relative;
-    width: 1.1em;
-  }
-  .rating > span:hover:before,
-  .rating > span:hover ~ span:before {
-     content: "\2605";
-     position: absolute;
-  }
+}
+.stars::after{
+    content: counter(rateme) '/5';
+    color: rgba(255, 255, 255, 0.836);
+}
+
+
 
 hr {
     
@@ -236,3 +248,4 @@ footer {
   
 
 }
+
