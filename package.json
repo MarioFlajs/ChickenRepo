@@ -1,0 +1,22 @@
+{
+  "name": "chickenrepo",
+  "version": "1.0.0",
+  "description": "WhishList",
+  "main": "backEnd.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarioFlajs/ChickenRepo.git"
+  },
+  "author": "Mario Flajs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarioFlajs/ChickenRepo/issues"
+  },
+  "homepage": "https://github.com/MarioFlajs/ChickenRepo#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

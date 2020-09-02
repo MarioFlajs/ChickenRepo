@@ -164,54 +164,11 @@ input {
     background-color: rgba(255, 255, 255, 0.836);
     display: inline;
     margin-left: 5rem;
-    
 }
-
-
-
-.star{
-  align-items: center;
-  margin: .6rem;
-  color:rgba(255, 238, 0, 0.938);
-  font-size: 2rem;
-    /* space out the stars */
-  
-  display: inline;
-}
-.star::before{
-  content: '\2606';    /* star outline */
-  cursor: pointer;
-}
-.star.rated::before{
-  /* the style for a selected star */
-  content: '\2605';  /* filled star */
-}
-
-.stars{
-    max-width: 5rem;
-    margin-inline: 3rem;
-    padding-inline: 2rem;
-    display: inline;
-    counter-reset: rateme 0;   
-    font-size: 2.0rem;
-    font-weight: 1000;
-}
-.star.rated{
-    counter-increment: rateme 1;
-    
-}
-.stars::after{
-    content: counter(rateme) '/5';
-    color: rgba(255, 255, 255, 0.836);
-}
-
-
 
 hr {
-    
     width: 100%;
     opacity: 0;
-     
   }
 
 .sector {
@@ -219,14 +176,11 @@ hr {
   }
 
 footer {
-    
     background-color: rgb(30, 54, 28);
     height: 18rem;
     width: 100%;
     position: relative;
     text-align: center;
-    
-    
 }
 
 #myBtn {
@@ -249,3 +203,105 @@ footer {
 
 }
 
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color:  rgb(30, 54, 28);
+  text-align: center;
+}
+
+li ,b {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(214, 192, 181); 
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .SubmitToMe {
+    color: rgb(214, 192, 181);
+    background-color: rgba(73, 73, 73, 0.877);
+    font-size: 20px;
+    border-radius: 15px;
+    background-size: 20px;
+    display: inline-block;
+    text-overflow: clip;
+    padding: 15px;
+    margin: 20px 20px;
+    text-decoration-line: none;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .SubmitToMe:hover {
+    background-color: rgba(128, 128, 128, 0.637);
+}
